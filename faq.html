@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <title>Border Buddy</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <section class="logo">
+          <figure class="logo__figure">
+            <img
+              src="./icons/logo.svg"
+              width="300"
+              height="100"
+              alt=""
+              class="logo__img"
+            />
+          </figure>
+        </section>
+        <section class="mobile__links">
+          <ul class="mobile__list">
+            <li>
+              <a href="tel:18663163972" class="mobile__items"
+                ><i class="fa fa-phone" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:service@borderbuddy.com" class="mobile__items"
+                ><i class="fa fa-envelope" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send/?phone=16042276303&text=Hi+BorderBuddy&type=phone_number&app_absent=0"
+                target="_blank"
+                class="mobile__items whatsapp"
+                ><i class="fa fa-whatsapp" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="mobile__items"
+                ><i class="fa fa-search search" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="header__item"
+                ><span class="header__icon bars"
+                  ><i class="fa fa-bars" aria-hidden="true"></i></span
+              ></a>
+            </li>
+          </ul>
+          <ul class="list__block">
+            <li class="mobile__list--block"><a href="about.html">about</a></li>
+            <li class="mobile__list--block">
+              <a href="pars.html">pars tracker</a>
+            </li>
+            <li class="mobile__list--block">
+              <a href="https://app.zipments.io/paps?broker=borderBuddy"
+                >paps check</a
+              >
+            </li>
+            <li class="mobile__list--block">
+              <a href="import-export.html">import/export</a>
+              <ul>
+                <li><a href="#">IMPORT INTO CANADA</a></li>
+                <li><a href="#">EXPORTING FROM CANADA</a></li>
+                <li><a href="#">CUSTOM BROKERAGE</a></li>
+                <li><a href="#">CUSTOMS CLEARANCE</a></li>
+                <li><a href="#">IMPORT A VEHICULE INTO CANADA</a></li>
+                <li><a href="#">IMPORT A VEHICULE INTO US</a></li>
+                <li><a href="#">CUSTOMS FOR E-COMMERCE</a></li>
+                <li><a href="#">CARMS</a></li>
+              </ul>
+            </li>
+            <li class="mobile__list--block"><a href="faq.html">faq</a></li>
+            <li class="mobile__list--block"><a href="blog.html">blog</a></li>
+            <li class="mobile__list--block">
+              <a href="contact.html">contact</a>
+            </li>
+          </ul>
+        </section>
+        <section class="header__links">
+          <ul class="header__list">
+            <li class="header__text">toll free</li>
+            <li>
+              <a href="#" class="header__item"
+                ><span class="header__icon"
+                  ><i class="fa fa-phone" aria-hidden="true"></i></span
+                ><span class="header__text">1(866)901-9004</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="header__item"
+                ><span class="header__icon"
+                  ><i class="fa fa-envelope" aria-hidden="true"></i></span
+                ><span class="header__text">service@borderbuddy.com</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="header__item"
+                ><span class="header__icon whatsapp"
+                  ><i class="fa fa-whatsapp" aria-hidden="true"></i></span
+                ><span class="header__text">Whatsapp an expert</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="header__services">
+            <li>
+              <a href="about.html" class="header__item">
+                <span class="header__text">About</span></a
+              >
+            </li>
+            <li>
+              <a href="pars.html" class="header__item"
+                ><span class="header__text">Pars tracer</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://app.zipments.io/paps?broker=borderBuddy"
+                class="header__item"
+                ><span class="header__text">paps check</span></a
+              >
+            </li>
+            <li class="menu">
+              <a href="import-export.html" class="header__item"
+                ><span class="header__text">import/export</span></a
+              >
+              <ul>
+                <li><a href="#">IMPORT INTO CANADA</a></li>
+                <li><a href="#">EXPORTING FROM CANADA</a></li>
+                <li><a href="#">CUSTOM BROKERAGE</a></li>
+                <li><a href="#">CUSTOMS CLEARANCE</a></li>
+                <li><a href="#">IMPORT A VEHICULE INTO CANADA</a></li>
+                <li><a href="#">IMPORT A VEHICULE INTO US</a></li>
+                <li><a href="#">CUSTOMS FOR E-COMMERCE</a></li>
+                <li><a href="#">CARMS</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="faq.html" class="header__item"
+                ><span class="header__text">faq</span></a
+              >
+            </li>
+            <li>
+              <a href="blog.html" class="header__item"
+                ><span class="header__text">blog</span></a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="header__item"
+                ><span class="header__text">contact</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="header__item"
+                ><span class="header__icon search"
+                  ><i class="fa fa-search" aria-hidden="true"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="header__item"
+                ><span class="header__text header__btn">get quote</span></a
+              >
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <p class="tree">
+      <span><a href="index.html">Home</a> " » "</span>
+      <span>Frequently Asked Questions</span>
+    </p>
+    <section class="search__section">
+      <span><i class="fa fa-times" aria-hidden="true"></i></span>
+      <input type="search" class="search__input" placeholder="Search..." />
+      <button class="btn search__btn">SEARCH</button>
+    </section>
+
+    <section class="arrow">
+      <div class="arrow__div">
+        <a href="#">
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+    <section class="about">
+      <h2 class="hero__h2">Frequently Asked Questions</h2>
+    </section>
+
+    <main>
+      <section class="questions">
+        <p>
+          The customs process was designed by bureaucrats, not consumers. Which
+          means it’s slow and complicated. You have questions - so many
+          questions. We have the answers.
+        </p>
+
+        <sections class="faq">
+          <div>
+            <div class="faq__heading">
+              <h3>Why do I need a customs broker?</h3>
+              <p>
+                <span
+                  ><i class="fa fa-plus faq__fa" aria-hidden="true"></i></span
+                ><i class="fa fa-minus faq__fa" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              Customs brokers help simplify the process of moving products over
+              the border. While you don’t legally need a customs broker, there
+              are many products that are difficult to get over the border
+              without the help of one. By using a customs broker you can get
+              your stuff over the border faster and with less hassle.
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>What is a customs broker and how can they help me?</h3>
+              <p>
+                <span
+                  ><i class="fa fa-plus faq__fa" aria-hidden="true"></i></span
+                ><i class="fa fa-minus faq__fa" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              A customs broker is a licensed individual or company that works
+              closely with border agents in other countries to make sure that
+              goods being imported or exported have met all requirements. A good
+              customs broker will help you with the paperwork and administration
+              and will be available to answer questions on your behalf
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>What is customs clearance?</h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              “Customs clearance” or “clearing customs” is a phrase we hear a
+              lot in our business. What it really means is the item that’s being
+              imported or exported has met a country’s requirements for entering
+              or leaving its borders. Those requirements vary from country to
+              country and from one item to another.
+              <br />
+
+              We can help you “clear customs” fast, with less paperwork and
+              fewer headaches.
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>What is a tariff code?</h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              A Harmonized Tariff Code or HS Tariff Code is a list of all the
+              classification codes for goods that are being imported or
+              exported. There are over 17,000 unique classification codes and
+              each country has its own tariff schedule. Here are the tariff
+              schedules for both the
+              <a href="https://hts.usitc.gov/">USA</a> and
+              <a
+                href="https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2023/menu-eng.html"
+                >Canada</a
+              >.
+            </p>
+          </div>
+
+          <div>
+            <div class="faq__heading">
+              <h3>What are your customs broker fees?</h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              Customs broker fees are the fees you pay someone to help you bring
+              your goods into Canada. These fees are different from duty, which
+              is an amount levied by the federal government and is a percentage
+              of the value of your goods. <br />
+
+              To find out more about our fee structure, send us an
+              <a href="mailto:service@borderbuddy.com">email</a>, live chat or
+              give us a <a href="tel:8552751100">call</a> and we’ll get back to
+              you shockingly fast.
+              <br />
+              For self-service, get an
+              <a
+                href="https://app.borderbuddy.com/calculator2/public/import?_ga=2.104806400.1432034472.1584585122-679155848.1580878235"
+                target="_blank"
+                rel="noopener"
+                >an instant quote.</a
+              >
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>What is an HS code? / How do I look up an HS code?</h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              The Harmonized System is an international naming structure for the
+              classification of products. It allows participating countries to
+              classify traded goods on a common basis for customs purposes. At
+              the international level, the Harmonized System (HS) for
+              classifying goods is a six-digit code system. <br />
+              <br />
+
+              You can look up an HS code for shipments into Canada on the
+              <a
+                href="https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2023/menu-eng.html"
+                >Canada Border Services Agency’s webpage for Customs Tariff.</a
+              >
+              <br />
+              <br />
+
+              For shipments into the United States, you can use this list of the
+              Harmonized Tariff Schedule to look up an HS code.
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>How do I import or ship a vehicle to Canada / USA?</h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              When it comes to importing a vehicle to or from Canada or the US,
+              we recommend that you start by checking our Learning Center. Here
+              you’ll find up-to-date information and instructions on how to get
+              started and what kind of specifics and paperwork you’ll need.
+              Specifically to import a vehicle into Canada from the U.S.,
+              there’s a 6 step process that we outline in this helpful
+              infographic as well as The 5 Things You Need to do to Import a Car
+              from The US to Canada.
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>How do I ship to Canada/US?</h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              If you’re shipping a car to Canada from the US or shipping a
+              vehicle to the US from Canada, you require specific information
+              about your vehicle and will need to complete a few forms to get
+              started. We have a helpful article on The 5 Things You Need to do
+              to Import a Car from The US to Canada. <br />
+              <br />
+
+              For other products, all major small parcel carriers like DHL,
+              FEDEX and UPS will give you international options through their
+              normal shipping label creation process. Alternatively, we can give
+              you a customized recommendation just click on the chat box, email
+              or call us.
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>How do I recover a seized item in customs?</h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragrap">
+              This will depend on why the item was seized. If it was seized
+              because the item is restricted/inadmissible, customs will either
+              send the product back to the exporter or destroy it. If the item
+              has been stopped by customs and they are waiting on the importer
+              to provide additional information/pay customs duties and taxes on
+              the product, a third party brokerage firm can assist and complete
+              a formal entry with customs to have the goods released.
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>How do I calculate shipping to US/Canada?</h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              Calculating your shipping costs to or from Canada will depend on
+              what you are shipping. First things first though, do you have a
+              carrier? All major small parcel carriers like DHL, FEDEX and UPS
+              will give you international options through their normal shipping
+              label creation process. You can find the cost of shipping in this
+              process. Alternatively, we can give you a customized shipping
+              recommendation.
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>How do I avoid customs fees/charges?</h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              Simply put, you can’t. We don’t recommend that you try because you
+              can get into serious trouble with border agents that way. Customs
+              fees and charges are levied against virtually every item that
+              comes into or goes out of a country. It’s just a matter of how
+              much you have to pay based on your item.
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>
+                What is the difference between a registered importer and a
+                customs broker?
+              </h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              A customs broker assists with the customs clearance of vehicles
+              into the United States that already meet US regulations for EPA
+              (Environmental Protection Agency) and DOT (Department of
+              Transportation). A Registered Importer assists with bringing the
+              vehicle up to US regulations in order for the vehicle to be
+              admissible into the United States. Once the vehicle meets US
+              regulations, a broker can assist with the import.
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>Why should I pay a broker for something I can do myself?</h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              There are many products that are difficult to get over the border
+              without the help of a broker. The idea, much like hiring an agent
+              or manager to represent you, is that our expertise adds value.
+              Since time is money and money is what you need to keep your lights
+              on and grow profits, you now get to spend time running your
+              business and let our agents’ expertise smooth the way with
+              customs, get the job done right and get it done quickly.
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>
+                There are a lot of brokers out there. Why should I trust you?
+              </h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              With 35 years of experience and a 99.3% customer satisfaction
+              rate, we are your secret weapon for quick, hassle-free importing
+              and exporting.
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>
+                Are there hidden fees you’re going to hit me with in the end?
+              </h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              No. We are upfront with our quotes and we will not hit you with
+              tacked-on fees at the end.
+            </p>
+          </div>
+          <div>
+            <div class="faq__heading">
+              <h3>What is GST (Goods and Services Tax)?</h3>
+              <p>
+                <span><i class="fa fa-plus" aria-hidden="true"></i></span
+                ><i class="fa fa-minus" aria-hidden="true"></i>
+              </p>
+            </div>
+            <p class="faq__paragraph">
+              GST is a fixed federal tax of 5% which applies to the supply of
+              almost all goods and services in Canada. This 5% tax is payable at
+              the border on commercial and personal imports. GST is the only tax
+              charged to residents of Alberta, Northwest Territories, Nunavut
+              and the Yukon Territories but is built into the HST for other
+              provinces (see “What is HST?” below).
+            </p>
+          </div>
+        </sections>
+      </section>
+      <section class="pre__footer">
+        <div>
+          <figure class="footer__logo">
+            <img src="/icons/logo.svg" alt="" />
+          </figure>
+        </div>
+        <ul class="footer__links">
+          <li><a href="about.html">about</a></li>
+          <li><a href="">IMPORT/EXPORT</a></li>
+          <li><a href="">LEARN</a></li>
+          <li><a href="">TESTIMONIALS</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CAREERS</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+        <section class="icons">
+          <p>
+            <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </p>
+          <p>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </p>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <p>&#169; <span id="year"></span> BorderBuddy, All Reserved</p>
+        <p><a href="/privacy/">Pricacy </a></p>
+        <p><a href="/terms-of-use/">legal terms </a></p>
+      </section>
+      <section>
+        <p>
+          <a href="https://studio1design.com/">Who designed this website?</a>
+        </p>
+      </section>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
